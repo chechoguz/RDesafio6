@@ -40,7 +40,7 @@ const LoginPage = () => {
             required
           />
         </div>
-        <button type="submit">Iniciar Sesión</button>
+        <button className="btn btn-dark btn-sm" type="submit">Iniciar Sesión</button>
       </form>
       {message && <p className="message">{message}</p>}
     </div>

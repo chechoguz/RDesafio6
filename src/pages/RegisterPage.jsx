@@ -54,7 +54,7 @@ const RegisterPage = () => {
             required
           />
         </div>
-        <button type="submit">Registrar</button>
+        <button className="btn btn-dark btn-sm" type="submit">Registrar</button>
       </form>
       {message && <p className="message">{message}</p>}
     </div>
