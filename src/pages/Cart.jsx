@@ -6,9 +6,13 @@ const Cart = () => {
 
   return (
     <div className="container">
-      <h1>Carrito de Compras</h1>
+      <div className="d-flex justify-content-center">
+        <h1>Carrito de Compras</h1>
+      </div>
       {cartItems.length === 0 ? (
-        <p>No hay productos en el carrito.</p>
+        <div className="d-flex justify-content-center">
+          <p>No hay productos en el carrito.</p>
+        </div>
       ) : (
         <>
           <ul className="list-group">
@@ -23,7 +27,9 @@ const Cart = () => {
               </li>
             ))}
           </ul>
-          <h2 className="mt-4">Total: ${total.toLocaleString('es-CL')}</h2>
+          <div className="d-flex justify-content-center">
+            <h2 className="mt-4">Total: ${total.toLocaleString('es-CL')}</h2>
+          </div>
         </>
       )}
     </div>

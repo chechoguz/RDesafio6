@@ -25,7 +25,9 @@ const RegisterPage = () => {
 
   return (
     <div className="register-form-container">
-      <h2>Registro</h2>
+      <div className="d-flex justify-content-center">
+        <h2>Registro</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Email:</label>
@@ -54,7 +56,9 @@ const RegisterPage = () => {
             required
           />
         </div>
-        <button className="btn btn-dark btn-sm" type="submit">Registrar</button>
+        <div className="d-flex justify-content-center">
+          <button className="btn btn-dark btn-lg" type="submit">Registrar</button>
+        </div>
       </form>
       {message && <p className="message">{message}</p>}
     </div>

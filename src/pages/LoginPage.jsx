@@ -20,7 +20,9 @@ const LoginPage = () => {
 
   return (
     <div className="login-form-container">
-      <h2>Login</h2>
+      <div className="d-flex justify-content-center">
+        <h2>Login</h2>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Email:</label>
@@ -40,7 +42,9 @@ const LoginPage = () => {
             required
           />
         </div>
-        <button className="btn btn-dark btn-sm" type="submit">Iniciar Sesión</button>
+        <div className="d-flex justify-content-center">
+          <button className="btn btn-dark btn-lg" type="submit">Iniciar Sesión</button>
+        </div>
       </form>
       {message && <p className="message">{message}</p>}
     </div>

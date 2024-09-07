@@ -5,7 +5,9 @@ const CardPizza = ({ name, img, desc, ingredients, price, onAddToCart }) => {
     <div className="card mb-4">
       <img src={img} className="card-img-top" alt={name} />
       <div className="card-body text-center">
-        <h5 className="card-title">{`Pizza ${name}`}</h5>
+        <h5 className="card-title">
+            <strong>{`Pizza ${name}`}</strong>
+          </h5>
         <p className="card-text">{desc}</p>
         <hr />
         <p><strong>Ingredientes:</strong></p>
